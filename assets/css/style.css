@@ -1,3 +1,14 @@
+:root {
+    --color-border: #cccccc;
+    --color-letter: #171717;
+    --color-html: #E93E30; 
+    --color-css: #299ED5; 
+    --color-js: #F7E018; 
+    --color-boostrap: #563D7C;
+    --color-react: #292C33; 
+    --color-vue: #67C770;
+    --color-letter2:#FFFFFF;
+}
 *{
     border: 0;
     padding: 0;
@@ -8,9 +19,9 @@
 /*Header*/
 .header{
     height: auto;
-    border-bottom: 1px solid  #cccccc; 
+    border-bottom: 1px solid var(--color-border); 
     padding-bottom: 15px;
-    margin: 20px 60px 20px 60px ; 
+    margin: 20px 90px 20px 90px;  
 }
 .header__logo-container{
     display: flex;
@@ -23,7 +34,170 @@
     border-radius: 10px;
 }
 .header__text{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-letter);
+}
+.main{
+    margin: 20px 90px 20px 90px; 
+}
+/*seccion novedades*/
+.posts {
+    display: flex;
+    flex-direction: column; 
+    color: var(--color-letter);
+}
+.title {
+    margin-bottom: 20px;
+}
+.posts__title{
+    font-size: 28px;
+    font-weight: 700;
+}
+.posts__card {
+    display: flex;
+    border-bottom: 1px solid  var(--color-border); 
+}
+
+.card__primary {
+    width: 50%; /* Ocupa todo el espacio disponible en el lado izquierdo */
+}
+
+.card__secundary {
+    display: flex;
+    flex-direction: column; /* Apilamiento vertical de las cards secundarias */
+    margin-left: 50px;
+}
+.card__secundaria{
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.card__content{
+    display: flex;
+    flex-direction: row;
+}
+.card__image-wrapper{
+    margin-right: 15px;
+}
+.card__image {
+    width: 603px;
+    height: 314px;
+    border-radius: 20px;
+}
+.card__image-secundary {
+    width: 189px;
+    height: 145px;
+    border-radius: 20px;
+}
+
+.card__text, .card__title, .card__textlogo {
+    margin: 10px 0;
+}
+.card__text-secundary, .card__title-secundary, .card__textlogo-secundary{
+    margin: 10px 0;
+}
+.card__title {
     font-size: 24px;
+    font-weight: 700;
+}
+.card__title-secundary{
+    font-size: 20px;
+    font-weight: 700;
+}
+.card__text{
+    font-size: 18px;
+    font-weight: 400;
+} 
+.card__text-secundary{
+    font-size: 16px;
+    font-weight: 400;
+}
+.card__textlogo{
+    font-size: 18px;
+    font-weight: 500;
+} 
+.card__textlogo-secundary{
+    font-size: 16px;
+    font-weight: 500;
+}
+.card__logo {
+    display: flex;
+    align-items: center;
+}
+.card__logoimage {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+/*populares*/
+.popular{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid  var(--color-border); 
+}
+.card__popular{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.container__cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cards {
+    width: calc(50% - 10px); /* Calcula el ancho de cada card */
+    margin-bottom: 20px; /* Espacio entre las cards */
+}
+.etiquetas{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+.etiqueta__image{
+    width: 85px;
+    height: 74px;
+    margin-left: 10px;
+}
+.card__html,
+.card__js,
+.card__css,
+.card__react,
+.card__vue,
+.card__bootstrap{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    width: 298px;
+    height: 89px;
+    align-items: center;
+    border-radius: 20px;
+}
+.card__html{
+    background-color: var(--color-html);
+}
+.card__js{
+    background-color: var(--color-js);
+}
+.card__css{
+    background-color: var(--color-css);
+}
+.card__react{
+    background-color: var(--color-react);
+}
+.card__vue{
+    background-color: var(--color-vue);
+}
+.card__bootstrap{
+    background-color: var(--color-boostrap);
+}
+.popular__title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+} 
+.etiqueta__text{
+    color: var(--color-letter2);
     font-weight: 700;
 }
 /*footer*/
@@ -31,7 +205,7 @@
     display: flex;
     flex-direction: row;
     height: 100px;
-    margin: 20px 60px 20px 60px ; 
+    margin: 20px 90px 20px 90px; 
 }
 .footer__logo-container{
     display: flex;
@@ -45,14 +219,18 @@
     border-radius: 10px;
 }
 .footer__textlogo{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 .footer__text{
-    font-size: 20px;
+    font-size: 1.25rem;
     text-align: right;
     font-weight: 400;
     align-items: center;
     width: 50%;
     padding: 15px;
+}
+/*Responsivo*/
+@media (max-width: 768px) {
+
 }
