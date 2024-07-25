@@ -160,12 +160,7 @@
     height: 74px;
     margin-left: 10px;
 }
-.card__html,
-.card__js,
-.card__css,
-.card__react,
-.card__vue,
-.card__bootstrap{
+.label{
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
@@ -174,22 +169,22 @@
     align-items: center;
     border-radius: 20px;
 }
-.card__html{
+.label--html{
     background-color: var(--color-html);
 }
-.card__js{
+.label--js{
     background-color: var(--color-js);
 }
-.card__css{
+.label--css{
     background-color: var(--color-css);
 }
-.card__react{
+.label--react{
     background-color: var(--color-react);
 }
-.card__vue{
+.label--vue{
     background-color: var(--color-vue);
 }
-.card__bootstrap{
+.label--bootstrap{
     background-color: var(--color-boostrap);
 }
 .popular__title{
